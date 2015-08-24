@@ -3,18 +3,18 @@ package be.nabu.libs.authentication.resources;
 import java.io.IOException;
 import java.io.InputStream;
 
-import be.nabu.libs.authentication.impl.auth.BasePasswordAuthenticator;
+import be.nabu.libs.authentication.impl.role.BaseRoleHandler;
 import be.nabu.libs.resources.ResourceReadableContainer;
 import be.nabu.libs.resources.api.ReadableResource;
 import be.nabu.libs.resources.api.Resource;
 import be.nabu.libs.resources.api.ResourceContainer;
 import be.nabu.utils.io.IOUtils;
 
-public class ResourceAuthenticator extends BasePasswordAuthenticator {
+public class ResourceRoleHandler extends BaseRoleHandler {
 
 	private ResourceContainer<?> container;
 
-	public ResourceAuthenticator(ResourceContainer<?> container) {
+	public ResourceRoleHandler(ResourceContainer<?> container) {
 		this.container = container;
 	}
 	
