@@ -1,0 +1,1 @@
+Allow resource-based authentication
